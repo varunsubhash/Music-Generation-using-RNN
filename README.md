@@ -20,3 +20,9 @@ Here character RNN will be used to generate new music. It is a many to many RNN.
 - The data for this is obtained from the link => http://abc.sourceforge.net/NMD/.
 - To reduce complexity only the jigs file containing 340 tunes will be used.
 - The input.text contains the tune and the tunes are concatenated with each other.
+- We wll be using batch SGD.
+- The total input legth = 129,665.
+- It contains 86 unique characters.
+- Each character is converted to an index.
+- The input is divided into many batches of size 64 X 16.
+- The output will conatain a one hot encoded value of 
