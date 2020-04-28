@@ -16,3 +16,7 @@ Music can be represented in the below ways.
 Here character RNN will be used to generate new music. It is a many to many RNN.
 - Character RNN became popular because of the blog by Andrej Karpathy. The link to that blog is mentioned below.
   http://karpathy.github.io/2015/05/21/rnn-effectiveness.
+  
+-The data for this is obtained from the link => http://abc.sourceforge.net/NMD/.
+- To reduce complexity only the jigs file containing 340 tunes will be used.
+  
