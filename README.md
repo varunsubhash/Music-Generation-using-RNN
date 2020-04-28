@@ -30,3 +30,8 @@ Here character RNN will be used to generate new music. It is a many to many RNN.
 - A character will be fed to the input and the ouput expected will be the next charcater.
 - 256 LSTM layers are present between the input and output. Vector of zeros are given as input in the first layer and the subsequent       layers the output of previous LSTM layers are used as input to the preceeding LSTM layer.
 - Each LSTM layer is used to learn different things.
+- In this model  , return sequences are set to true as we need output as every stage.
+- A time distributed layer is constructed at every stage.
+- The stateful parameter is set to true as we need the ouput of the first batch to be fed into the next batch.
+- This is useful as the model can learn long term dependencies better,
+- An embedded layer is also used.
