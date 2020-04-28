@@ -25,4 +25,8 @@ Here character RNN will be used to generate new music. It is a many to many RNN.
 - It contains 86 unique characters.
 - Each character is converted to an index.
 - The input is divided into many batches of size 64 X 16.
-- The output will conatain a one hot encoded value of 
+- The output will conatain a one hot encoded value for the charcater.
+- In the model, the input layer will have multpile LSTM layers before the output.
+- A character will be fed to the input and the ouput expected will be the next charcater.
+- 256 LSTM layers are present between the input and output. Vector of zeros are given as input in the first layer and the subsequent       layers the output of previous LSTM layers are used as input to the preceeding LSTM layer.
+- Each LSTM layer is used to learn different things.
